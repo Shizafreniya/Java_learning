@@ -1,0 +1,85 @@
+public class Main {
+    public static void main(String[] args) {
+        double a = 15.5;
+        double b = 21.7;
+        double c = 674.2;
+        double d = 9.1;
+        System.out.println(a + b + c + d);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("=== Изучаем переменные и типы данных ===");
+        
+        // 1. Переменные и типы данных
+        int age = 25;                           // Целое число
+        double height = 1.75;                   // Дробное число
+        String name = "Алексей";                // Строка
+        boolean isStudent = true;               // Логический тип (true/false)
+        char grade = 'A';                       // Символ
+        
+        // 2. Выводим значения переменных
+        System.out.println("Имя: " + name);
+        System.out.println("Возраст: " + age);
+        System.out.println("Рост: " + height + " м");
+        System.out.println("Студент: " + isStudent);
+        System.out.println("Оценка: " + grade);
+        
+        // 3. Простые операции
+        int birthYear = 2025 - age;
+        System.out.println("Год рождения: " + birthYear);
+        
+        // 4. Условные операторы
+        System.out.println("\n=== Условные операторы ===");
+        if (age >= 18) {
+            System.out.println(name + " - совершеннолетний");
+        } else {
+            System.out.println(name + " - несовершеннолетний");
+        }
+        
+        // 5. Простой цикл
+        System.out.println("\n=== Циклы ===");
+        System.out.println("Счет от 1 до 5:");
+        for (int i = 1; i <= 5; i++) {
+            System.out.println("Число: " + i);
+        }
+    }
+}
+
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        System.out.println("Тест цикла for");
+
+        for (int i = 2; i <= 10; i = i + 2){
+            System.out.println("Число 1\n" + i);
+        }
+        for (int i = 10; i >= 1; i--) {
+            System.out.println("Число 2\n" + i);
+        }
+        for (int i = 1; i <=10; i++) {
+            System.out.println("Число 3\n" + i);
+        }
+    }
+}
+
+
+
+(Запрос данных от пользователя(import java.util.Skanner;)
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.print("Введите число");
+        //String username = scan.nextLine();
+        //System.out.println("Привет" + username);
+        int num1 = scan.nextInt();
+        byte num2 = scan.nextByte();
+        boolean b = scan.nextBoolean();
+        float num3 = scan.nextFloat();
+    }
+}
