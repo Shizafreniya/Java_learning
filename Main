@@ -83,3 +83,20 @@ public class Main {
         float num3 = scan.nextFloat();
     }
 }
+
+
+
+(мат операции)
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        float num1 = 50, num2 = 33;
+        float res = num1 % num2;
+
+        //Сокращенные математические операцииres = res += 10;
+
+        System.out.println("Результат " + res);
+    }
+}
