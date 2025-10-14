@@ -100,3 +100,56 @@ public class Main {
         System.out.println("Результат " + res);
     }
 }
+
+
+(Простой калькулятор)
+
+import java.sql.SQLOutput;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Введите первое число:  ");
+        float num1 = scan.nextFloat();
+        System.out.println("Введите второе число:  ");
+        float num2 = scan.nextFloat();
+        float res1 = num1 + num2;
+        float res2 = num1 - num2;
+        float res3 = num1 * num2;
+        float res4 = num1 / num2;
+
+        System.out.println("Результат: ");
+        System.out.println(res1 + "\n" + res2 + "\n" + res3 + "\n" + res4);
+
+    }
+}
+
+
+
+public class Main {
+    public static void main(String[] args) {
+        //условные конструкции if-else
+        int a = 15, b = 15;
+        char sym1 = 'A', sym2 = 'A';
+        boolean isHasCar = true;
+        if(!isHasCar && a == b && sym1 != sym2)
+        if(isHasCar){
+            System.out.println("Да, верно");
+        } else if(a >= b) {
+            System.out.println("2 test");
+        }
+        else if(a <= b)
+            System.out.println("3 test");
+
+        else if(a == b)
+            System.out.println("4 test");
+
+        else if(a != b)
+            System.out.println("5 test");
+
+        else {
+
+            System.out.println("Нет, не верно");
+        }
+    }
+}
