@@ -95,7 +95,7 @@ public class Main {
         float num1 = 50, num2 = 33;
         float res = num1 % num2;
 
-        //Сокращенные математические операцииres = res += 10;
+        //Сокращенные математические операции res = res += 10;
 
         System.out.println("Результат " + res);
     }
@@ -153,3 +153,121 @@ public class Main {
         }
     }
 }
+
+(switch-case)
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //Услоыне уонструкции switch-case
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Введите число");
+        int num = scanner.nextInt();
+        switch (num) {
+            case 1:
+                System.out.println("Number is 1");
+                break;
+            case 2:
+                System.out.println("Number is 2");
+                break;
+            case 3:
+                System.out.println("Number is 3");
+                break;
+            case 4:
+                System.out.println("Number is 4");
+                break;
+            default:
+                System.out.println("Default");
+        }
+    }
+}
+
+
+
+(Калькулятор  на свич-кейсах)
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //Услоыне уонструкции switch-case
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Введите первое число: ");
+        int num1 = scanner.nextInt();
+
+        System.out.print("Введите второе число: ");
+        int num2 = scanner.nextInt();
+
+        int res;
+
+        System.out.println("Введите действие которое хотите исполнить: ");
+        String action = scanner.nextLine();
+        action = scanner.nextLine();
+
+        switch (action) {
+            case "+":
+                res = num1 + num2;
+                System.out.println("Результат" + res);
+                break;
+            case "-":
+                res = num1 - num2;
+                System.out.println("Результат:" + res);
+                break;
+            case "*":
+                res = num1 * num2;
+                System.out.println("Результат:" + res);
+                break;
+            case "/":
+                if (num2 == 0)
+                    System.out.println("Error");
+                else {
+                    res = num1 / num2;
+                    System.out.println("Результат:" + res);
+                }
+                break;
+            default:
+                System.out.println("Вы что-то не то ввели...");
+        }
+    }
+}
+
+
+(Циклы и их операторы)
+import java.lang.annotation.ElementType;
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //Циклы
+        //for(float i = 100; i >10; i /= 2)
+        //    System.out.println("Element:" + i);
+//        int i = 100;
+//        while(i > 5) {
+//            System.out.println("Element" + i);
+//            i -= 25;
+//        }
+        //do while
+//        int i = 0;
+//        do {
+//            System.out.println("Element" + i);
+//            i++;
+//
+//        } while(i < 10);
+//
+        for(int i = 5; i < 25; i += 2) {
+            //continue-оператор цикла, продолжает итерацию если выполнено его условие
+            if(i % 3 == 0)
+            continue;
+            //break - оператор цикла, пропуск оставшегося кода внутри цикла 
+            // для текущей итерации и переход к следующей итерации.
+            if(i >= 17)
+                break;
+
+            System.out.println("Element" + i);
+        }
+
+    }
+}
+
