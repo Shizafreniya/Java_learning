@@ -271,3 +271,71 @@ public class Main {
     }
 }
 
+
+
+
+
+(массивы данных)
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //Массивы данных
+//        int[] nomera = new int[5];//массив с 5 значениями внутри
+//        nomera[0] = 228;
+//        nomera[1] = 147;
+//        nomera[2] = 15;
+//        nomera[3] = 122;
+//        nomera[4] = 44;
+//        int res = nomera[3] + nomera[0];
+//        System.out.println(res);
+//
+//        float[] nomera2 = new float[] { 5.0f, 10.3f, 12.2f, 34.24f}; //массив
+//        for(int i = 0; i < nomera2.length; i++) { //<-- выводим данные массива по возрастающей
+//            System.out.println("Element" + nomera2[i]);
+//        }
+        //практическое применение
+        int[] arr =  new int[4];
+        Scanner scanner = new Scanner(System.in);
+
+        for(int i = 0; i < arr.length; i++) {
+            System.out.print("Введите число: ");//<--Запрос у пользоватеся чисел(кол во зависит от размера массива)
+            int value = scanner.nextInt();
+            arr[i] = value;
+        }
+        int min = arr[0];
+        for(int i = 0; i < arr.length; i++) {
+            if(arr[i] < min) //<-- Задаём массиву условие
+                min = arr[i];
+        }
+        System.out.println("Minimal: " + min);
+    }
+}
+
+
+
+(Многомерные массивы)
+import java.util.Scanner;
+
+public class Main {
+
+    public static void main(String[] args) {
+        //Многомерные массивы данных
+        char[][] syms = new char[2][2];
+        // [[4 , 5, 6], [7, 8, 9]] <-- Двумерный массив
+        syms[0][0] = 't';
+        System.out.println(syms[0][0]);
+        byte[][] nums = new byte[][] {
+                {5, 7}, //<--Нулевой элемент массива
+                {2, 8}, //<--Первый
+                {13, 3} //<-- второй и тд
+
+        };
+        nums[1][1] = 67;
+        System.out.println(nums[1][1]);
+        
+//        for() //<--Перебирает первый массив(все {})
+//            for() //<--Перебирает каждый вложанный массив
+    }
+}
